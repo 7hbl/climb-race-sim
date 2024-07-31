@@ -1,0 +1,366 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ButtonList = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Rebirth = Instance.new("TextButton")
+local Wins = Instance.new("TextButton")
+local Grip = Instance.new("TextButton")
+local Pets = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local RebirthsGUI = Instance.new("Frame")
+local RebirthGIVER = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local WinsGUI = Instance.new("Frame")
+local WinsGIVER = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local GripGUI = Instance.new("Frame")
+local GripGiver = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local PetsGUI = Instance.new("Frame")
+local OpenEgg = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local BestPet = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local open = Instance.new("TextButton")
+local uicornerforopen = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(22, 35, 62)
+MainFrame.BorderColor3 = Color3.fromRGB(22, 35, 62)
+MainFrame.Position = UDim2.new(0.248000011, 0, 0.20099999, 0)
+MainFrame.Size = UDim2.new(0.503000021, 0, 0.59799999, 0)
+MainFrame.Visible = false
+
+UICorner.Parent = MainFrame
+
+ButtonList.Name = "ButtonList"
+ButtonList.Parent = MainFrame
+ButtonList.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+ButtonList.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonList.BorderSizePixel = 0
+ButtonList.Position = UDim2.new(0.01640944, 0, 0.0207473729, 0)
+ButtonList.Size = UDim2.new(0.141658142, 0, 0.96058023, 0)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = ButtonList
+
+Rebirth.Name = "Rebirth"
+Rebirth.Parent = ButtonList
+Rebirth.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+Rebirth.BackgroundTransparency = 1.000
+Rebirth.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rebirth.BorderSizePixel = 0
+Rebirth.Position = UDim2.new(-0.00824388396, 0, 0.125794768, 0)
+Rebirth.Size = UDim2.new(1.00837111, 0, 0.158189237, 0)
+Rebirth.Font = Enum.Font.FredokaOne
+Rebirth.Text = "Rebirths"
+Rebirth.TextColor3 = Color3.fromRGB(16, 25, 44)
+Rebirth.TextScaled = true
+Rebirth.TextSize = 14.000
+Rebirth.TextWrapped = true
+Rebirth.MouseButton1Click:Connect(function()
+	RebirthsGUI.Visible = true
+	WinsGUI.Visible = false
+	PetsGUI.Visible = false
+	GripGUI.Visible = false
+	Rebirth.TextColor3 = Color3.fromRGB(89, 83, 255)
+	Wins.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Pets.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Grip.TextColor3 = Color3.fromRGB(16, 25, 44)
+end)
+
+Wins.Name = "Wins"
+Wins.Parent = ButtonList
+Wins.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+Wins.BackgroundTransparency = 1.000
+Wins.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Wins.BorderSizePixel = 0
+Wins.Position = UDim2.new(0.0630413964, 0, 0.339623183, 0)
+Wins.Size = UDim2.new(0.865800083, 0, 0.126859263, 0)
+Wins.Font = Enum.Font.FredokaOne
+Wins.Text = "Wins"
+Wins.TextColor3 = Color3.fromRGB(16, 25, 44)
+Wins.TextScaled = true
+Wins.TextSize = 14.000
+Wins.TextWrapped = true
+Wins.MouseButton1Click:Connect(function()
+	RebirthsGUI.Visible = false
+	WinsGUI.Visible = true
+	PetsGUI.Visible = false
+	GripGUI.Visible = false
+	Rebirth.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Wins.TextColor3 = Color3.fromRGB(89, 83, 255)
+	Pets.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Grip.TextColor3 = Color3.fromRGB(16, 25, 44)
+end)
+
+Grip.Name = "Grip"
+Grip.Parent = ButtonList
+Grip.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+Grip.BackgroundTransparency = 1.000
+Grip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Grip.BorderSizePixel = 0
+Grip.Position = UDim2.new(0.0630413964, 0, 0.555611491, 0)
+Grip.Size = UDim2.new(0.865800083, 0, 0.126859263, 0)
+Grip.Font = Enum.Font.FredokaOne
+Grip.Text = "Grip"
+Grip.TextColor3 = Color3.fromRGB(16, 25, 44)
+Grip.TextScaled = true
+Grip.TextSize = 14.000
+Grip.TextWrapped = true
+Grip.MouseButton1Click:Connect(function()
+	RebirthsGUI.Visible = false
+	WinsGUI.Visible = false
+	PetsGUI.Visible = false
+	GripGUI.Visible = true
+	Rebirth.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Wins.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Pets.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Grip.TextColor3 = Color3.fromRGB(89, 83, 255)
+end)
+
+Pets.Name = "Pets"
+Pets.Parent = ButtonList
+Pets.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+Pets.BackgroundTransparency = 1.000
+Pets.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Pets.BorderSizePixel = 0
+Pets.Position = UDim2.new(0.0630413964, 0, 0.750001013, 0)
+Pets.Size = UDim2.new(0.865800083, 0, 0.126859263, 0)
+Pets.Font = Enum.Font.FredokaOne
+Pets.Text = "Pets"
+Pets.TextColor3 = Color3.fromRGB(16, 25, 44)
+Pets.TextScaled = true
+Pets.TextSize = 14.000
+Pets.TextWrapped = true
+Pets.MouseButton1Click:Connect(function()
+	RebirthsGUI.Visible = false
+	WinsGUI.Visible = false
+	PetsGUI.Visible = true
+	GripGUI.Visible = false
+	Rebirth.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Wins.TextColor3 = Color3.fromRGB(16, 25, 44)
+	Pets.TextColor3 = Color3.fromRGB(89, 83, 255)
+	Grip.TextColor3 = Color3.fromRGB(16, 25, 44)
+end)
+
+Exit.Name = "Exit"
+Exit.Parent = MainFrame
+Exit.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.926504433, 0, 0.0207473729, 0)
+Exit.Size = UDim2.new(0.0633973628, 0, 0.105786942, 0)
+Exit.ZIndex = 2
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(16, 25, 45)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+UICorner_3.Parent = Exit
+Exit.MouseButton1Click:Connect(function()
+	open.Visible = true
+	MainFrame.Visible = false
+end)
+
+open.Name = "OPEN"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+open.BorderSizePixel = 0
+open.Position = UDim2.new(-0,0,0.452,0)
+open.Size = UDim2.new(0.032,0,0.062,0)
+open.ZIndex = 2
+open.Font = Enum.Font.SourceSans
+open.Text = "OPEN"
+open.TextColor3 = Color3.fromRGB(16, 25, 45)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
+uicornerforopen.Parent = open
+open.MouseButton1Click:Connect(function()
+	open.Visible = false
+	MainFrame.Visible = true
+end)
+
+RebirthsGUI.Name = "RebirthsGUI"
+RebirthsGUI.Parent = MainFrame
+RebirthsGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RebirthsGUI.BackgroundTransparency = 1.000
+RebirthsGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RebirthsGUI.BorderSizePixel = 0
+RebirthsGUI.Size = UDim2.new(1, 0, 1, 0)
+RebirthsGUI.Visible = false
+
+RebirthGIVER.Name = "RebirthGIVER"
+RebirthGIVER.Parent = RebirthsGUI
+RebirthGIVER.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+RebirthGIVER.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RebirthGIVER.BorderSizePixel = 0
+RebirthGIVER.Position = UDim2.new(0.261289358, 0, 0.293536872, 0)
+RebirthGIVER.Size = UDim2.new(0.506169319, 0, 0.427136868, 0)
+RebirthGIVER.Font = Enum.Font.FredokaOne
+RebirthGIVER.Text = "+1 Rebirth"
+RebirthGIVER.TextColor3 = Color3.fromRGB(14, 23, 40)
+RebirthGIVER.TextScaled = true
+RebirthGIVER.TextSize = 14.000
+RebirthGIVER.TextWrapped = true
+RebirthGIVER.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = 0
+	}
+
+	game:GetService("ReplicatedStorage").RebirthActive_Event:InvokeServer(unpack(args))
+end)
+
+UICorner_4.Parent = RebirthGIVER
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.196913704, 0, 0.0373453274, 0)
+TextLabel.Size = UDim2.new(0.643756449, 0, 0.15163359, 0)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Made by @lqmc on discord | .gg/VisionV2"
+TextLabel.TextColor3 = Color3.fromRGB(61, 57, 165)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+WinsGUI.Name = "WinsGUI"
+WinsGUI.Parent = MainFrame
+WinsGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WinsGUI.BackgroundTransparency = 1.000
+WinsGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WinsGUI.BorderSizePixel = 0
+WinsGUI.Size = UDim2.new(1, 0, 1, 0)
+WinsGUI.Visible = false
+
+WinsGIVER.Name = "WinsGIVER"
+WinsGIVER.Parent = WinsGUI
+WinsGIVER.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+WinsGIVER.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WinsGIVER.BorderSizePixel = 0
+WinsGIVER.Position = UDim2.new(0.196913704, 0, 0.293536872, 0)
+WinsGIVER.Size = UDim2.new(0.738426566, 0, 0.427136868, 0)
+WinsGIVER.Font = Enum.Font.FredokaOne
+WinsGIVER.Text = "Give 1QD wins"
+WinsGIVER.TextColor3 = Color3.fromRGB(14, 23, 40)
+WinsGIVER.TextScaled = true
+WinsGIVER.TextSize = 14.000
+WinsGIVER.TextWrapped = true
+
+UICorner_5.Parent = WinsGIVER
+
+WinsGIVER.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = 1000000000000000
+	}
+
+	game:GetService("ReplicatedStorage").GiveTrohpy_Event:FireServer(unpack(args))
+end)
+
+GripGUI.Name = "GripGUI"
+GripGUI.Parent = MainFrame
+GripGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GripGUI.BackgroundTransparency = 1.000
+GripGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GripGUI.BorderSizePixel = 0
+GripGUI.Size = UDim2.new(1, 0, 1, 0)
+GripGUI.Visible = false
+
+GripGiver.Name = "GripGiver"
+GripGiver.Parent = GripGUI
+GripGiver.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+GripGiver.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GripGiver.BorderSizePixel = 0
+GripGiver.Position = UDim2.new(0.198175982, 0, 0.291462123, 0)
+GripGiver.Size = UDim2.new(0.728328407, 0, 0.427136868, 0)
+GripGiver.Font = Enum.Font.FredokaOne
+GripGiver.Text = "Get BEST grip"
+GripGiver.TextColor3 = Color3.fromRGB(14, 23, 40)
+GripGiver.TextScaled = true
+GripGiver.TextSize = 14.000
+GripGiver.TextWrapped = true
+
+UICorner_6.Parent = GripGiver
+GripGiver.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "HandGrip_26",
+		[2] = false,
+		[3] = false,
+		[4] = 0
+	}
+
+	game:GetService("ReplicatedStorage").GripButtonPresseed_Event:InvokeServer(unpack(args))
+end)
+
+PetsGUI.Name = "PetsGUI"
+PetsGUI.Parent = MainFrame
+PetsGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PetsGUI.BackgroundTransparency = 1.000
+PetsGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PetsGUI.BorderSizePixel = 0
+PetsGUI.Size = UDim2.new(1, 0, 1, 0)
+
+OpenEgg.Name = "OpenEgg"
+OpenEgg.Parent = PetsGUI
+OpenEgg.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+OpenEgg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenEgg.BorderSizePixel = 0
+OpenEgg.Position = UDim2.new(0.309255511, 0, 0.235444129, 0)
+OpenEgg.Size = UDim2.new(0.417810589, 0, 0.207161382, 0)
+OpenEgg.Font = Enum.Font.FredokaOne
+OpenEgg.Text = "Open Best Egg"
+OpenEgg.TextColor3 = Color3.fromRGB(14, 23, 40)
+OpenEgg.TextScaled = true
+OpenEgg.TextSize = 14.000
+OpenEgg.TextWrapped = true
+
+UICorner_7.Parent = OpenEgg
+OpenEgg.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = workspace.Maps.Map_6.PetGatcha.Gatcha_3,
+		[2] = "Trophy",
+		[3] = 1
+	}
+
+	game:GetService("ReplicatedStorage").Gatcha_Event:FireServer(unpack(args))
+end)
+
+BestPet.Name = "BestPet"
+BestPet.Parent = PetsGUI
+BestPet.BackgroundColor3 = Color3.fromRGB(28, 45, 80)
+BestPet.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BestPet.BorderSizePixel = 0
+BestPet.Position = UDim2.new(0.309255511, 0, 0.513459325, 0)
+BestPet.Size = UDim2.new(0.417810589, 0, 0.207161382, 0)
+BestPet.Font = Enum.Font.FredokaOne
+BestPet.Text = "Equip BEST Pet"
+BestPet.TextColor3 = Color3.fromRGB(14, 23, 40)
+BestPet.TextScaled = true
+BestPet.TextSize = 14.000
+BestPet.TextWrapped = true
+
+UICorner_8.Parent = BestPet
+BestPet.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "Puzzel_Pet",
+		[2] = "Equip"
+	}
+
+	game:GetService("ReplicatedStorage").EquipPet_Event:FireServer(unpack(args))
+end)
